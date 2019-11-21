@@ -1,11 +1,14 @@
 package top.rk6216.demo.pojo;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
+@Data
 @Entity
 @Table(name = "ay_mood")
 public class AyMood implements Serializable {
