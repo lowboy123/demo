@@ -1,0 +1,21 @@
+server:
+  port: 80
+  
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jdmd?serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+    data-username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+  thymeleaf: 
+    mode: LECACYHTML5
+    cache: false
+    
