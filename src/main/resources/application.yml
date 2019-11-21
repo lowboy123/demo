@@ -1,6 +1,6 @@
 server:
-  port: 80
-  
+  port: 8080
+
   servlet:
     context-path: /
 
@@ -20,11 +20,12 @@ spring:
     cache: false
   activemq:
     broker-url: tcp://localhost:61616
+    #用户名
+    user: admin
+    #密码
+    password: admin
     in-memory: true
-    pool:
-      enabled: false
     packages:
       trust-all: true
-
-
-    
+    pool:
+      enabled: true
